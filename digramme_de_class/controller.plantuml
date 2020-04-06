@@ -1,0 +1,82 @@
+@startuml
+package Arezzo
+{
+	package Controllers
+	{
+		abstract Controller
+		{
+			Controller()
+			void setModel(Model m)
+		}
+		
+		class MenuController
+		{
+			void initialize(URL location, ResourceBundle resources)
+			void update(Observable o, Object arg)
+			void OnTransposerClick()
+			void Save()
+			void Open()
+			void Quit()
+			void OnChangeName()
+		}
+		
+		class BottomController
+		{
+			void initialize(URL location, ResourceBundle resources)
+			void update(Observable o, Object arg)
+			void OnDureesChange()
+			void OnNoteClick(Notes note)
+			void OnSilenceClick()
+			void OnPlayBack()
+			void OnTempoScroll()
+		}
+		
+		class MiddleController
+		{
+			void initialize(URL location, ResourceBundle resources)
+			void update(Observable o, Object arg)
+			void OnNotesClick()
+		}
+		
+		class NotesWindowController
+		{
+			void initialize(URL location, ResourceBundle resources)
+			void updateList(Model model)
+			void update(Observable o, Object arg)
+			void ClickDescendre()
+			void ClickMonter() 
+			void ClickEffacer()
+			void updateList(Model model)			
+		}
+		
+		class SplashScreen
+		{
+			void setMain(ArezzoMain arezzoMain)
+			void initialize(URL url, ResourceBundle rb)
+		}
+	}
+
+	package Backend
+	{
+		class Model
+	}
+}
+
+
+Controller --"1" Model
+Controller .|> Observer
+
+MenuController -|> Controller
+MenuController .|> Initializable
+
+BottomController -|> Controller
+BottomController .|> Initializable
+
+MiddleController -|> Controller
+MiddleController .|> Initializable
+
+NotesWindowController -|> Controller
+NotesWindowController .|> Initializable
+
+SplashScreen .|> Initializable
+@enduml

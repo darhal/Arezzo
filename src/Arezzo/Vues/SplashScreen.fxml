@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="583.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Arezzo.Controllers.SplashScreen">
+   <children>
+         <ImageView depthTest="ENABLE" fitHeight="400.0" fitWidth="606.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: transparent; -fx-background-radius: 10;">
+            <image>
+               <Image url="@/images/splash_screen.png" />
+            </image>
+         </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="76.0" layoutY="226.0" prefHeight="137.0" prefWidth="384.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" text="Arezzo" textAlignment="RIGHT" textFill="#ed476b" textOverrun="LEADING_WORD_ELLIPSIS">
+         <font>
+            <Font name="Chilanka Regular" size="96.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Label>
+   </children>
+</Pane>

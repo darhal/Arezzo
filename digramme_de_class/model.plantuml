@@ -1,0 +1,106 @@
+@startuml
+package Arezzo
+{
+	package Backend
+	{
+		class Melodie
+		{
+			String titre;
+			transient Partition partition;
+			Melodie(String titre)
+			Melodie()
+			void ajouter(BasicNote a)
+			String constructMelodie()
+			void PlayCurrent()
+			void ajouterSilence(Silence s)
+			void removeNote(BasicNote note)
+			void monterLeTon(BasicNote note)
+			void descendreLeTon(BasicNote note)
+			void setInstrument(String instru)
+			void setVolume(double v)
+			void setTempo(double t)
+			String getMelodieNotation()
+			Iterator<BasicNote> iterator()
+			void setTitre(String titre)
+			void transposer(int transposeValue)
+		}
+
+		class Model
+		{
+			Model(Controller... observers)
+			setNote(Notation.Notes nt)
+			setInstru(Notation.Instrument instru)
+			void ajouterSilence()
+			void removeNote(BasicNote note)
+			void monterLeTon(BasicNote note)
+			void descendreLeTon(BasicNote note)
+			void setName(String titre)
+			void reset()
+			void setMelodieNotes(ArrayList<BasicNote> notes)
+			void transposeMelodie(int transposeValue)
+		}
+
+		package Notation
+		{
+			enum TypeNote
+			enum Silences
+			enum Durees
+			enum Notes
+			enum Alterations
+			enum Instrument
+			class Notation{
+				static Notes notes[]
+				static String GetNotation(Instrument instru)
+				static String GetNotation(Notes note, TypeNote type)
+				static String GetNotation(Notes note, TypeNote type, Durees durees)
+				static String GetNotation(Silences s)
+				static String GetNotation(Durees d)
+			}
+		}
+		
+		package Notes
+		{
+			class BasicNote
+			{
+				protected String notation
+				BasicNote(String notation)
+				void play(Partition p)
+				String getNotation()
+				abstract void monterLeTon();
+				abstract void descendreLeTon();
+				abstract void transposer(int transposeValue);
+			}
+			
+			class Note
+			{
+				Note(Notation.Notes note, Notation.TypeNote type, Notation.Durees durees)
+				void monterLeTon()
+				void descendreLeTon()
+				void updateNotation()
+				void transposer(int transposeValue)
+			}
+			class Silence
+			{
+				Silence(Notation.Silences s)
+				void descendreLeTon()
+				void transposer(int transposeValue)
+				void monterLeTon()
+			}
+		}
+	}
+}
+
+class Serializable
+Model -- "*" Controller
+Model .|> Observable
+Melodie -- "*" BasicNote
+Melodie .|> Iterable
+Melodie .|> Serializable
+BasicNote -|> Serializable
+Note -|> BasicNote
+Silence -|> BasicNote
+Note -- "1" Notes
+Note -- "1" TypeNote
+Note -- "1" Durees
+Silence -- "1" Silences
+@enduml

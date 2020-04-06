@@ -1,0 +1,15 @@
+@startuml
+package Arezzo
+{
+	class ArezzoMain
+	{
+		void start(Stage stage)
+		void stop()
+		void LoadMain()
+		static void main(String[] args)
+	}
+}
+
+ArezzoMain -|> Application
+
+@enduml

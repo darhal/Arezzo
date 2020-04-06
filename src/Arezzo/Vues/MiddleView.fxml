@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="327.0" prefWidth="1007.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Arezzo.Controllers.MiddleController">
+   <children>
+      <VBox layoutX="12.0" layoutY="10.0" prefHeight="308.0" prefWidth="983.0">
+         <children>
+            <Label fx:id="L_SongName" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="52.0" prefWidth="983.0" text="Parition Sans Titre" textAlignment="CENTER">
+               <font>
+                  <Font name="Ubuntu Italic" size="36.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="251.0" prefWidth="983.0">
+               <children>
+                  <ScrollPane fx:id="P_MelodiePane" fitToHeight="true" prefHeight="277.0" prefWidth="900.0" />
+                  <Button fx:id="B_LesNotes" contentDisplay="TOP" mnemonicParsing="false" prefHeight="146.0" prefWidth="119.0" text="Les Notes">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image preserveRatio="true" requestedHeight="128" requestedWidth="128" smooth="true" url="@/images/notes.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+
+<MenuBar prefWidth="1000" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Arezzo.Controllers.MenuController">
+        <menus>
+          <Menu fx:id="M_Melodie" mnemonicParsing="false" text="Melodie">
+            <items>
+                  <MenuItem fx:id="MI_Nouveau" mnemonicParsing="false" text="Nouveau" />
+              <MenuItem fx:id="MI_Ouvrir" mnemonicParsing="false" text="Ouvrir" />
+                  <MenuItem fx:id="MI_Enregistrer" mnemonicParsing="false" text="Enregistrer Sous. .." />
+                  <MenuItem fx:id="MI_Quitter" mnemonicParsing="false" text="Quitter" />
+            </items>
+          </Menu>
+          <Menu fx:id="M_Outils" mnemonicParsing="false" text="Outils">
+            <items>
+              <MenuItem fx:id="MI_Renommer" mnemonicParsing="false" text="Renommer" />
+                  <MenuItem fx:id="MI_Transposer" mnemonicParsing="false" text="Transposer" />
+            </items>
+          </Menu>
+        </menus>
+</MenuBar>

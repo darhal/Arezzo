@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="354.0" prefWidth="1032.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Arezzo.Controllers.BottomController">
+   <children>
+      <HBox layoutX="19.0" layoutY="17.0" prefHeight="320.0" prefWidth="1032.0" spacing="15.0">
+         <children>
+            <VBox prefHeight="320.0" prefWidth="398.0" spacing="10.0">
+               <children>
+                  <Pane prefHeight="285.0" prefWidth="392.0">
+                     <children>
+                        <Button fx:id="B_DoBlanche" mnemonicParsing="false" prefHeight="285.0" prefWidth="56.0" style="" text="">
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image preserveRatio="true" requestedHeight="285" requestedWidth="56" smooth="true" url="@/images/note/DoBlanche.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="B_ReBlanche" layoutX="56.0" mnemonicParsing="false" prefHeight="285.0" prefWidth="56.0" style="" text="">
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image preserveRatio="true" requestedHeight="285" requestedWidth="56" smooth="true" url="@/images/note/ReBlanche.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="B_MiBlanche" layoutX="112.0" mnemonicParsing="false" prefHeight="285.0" prefWidth="56.0" style="" text="">
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image preserveRatio="true" requestedHeight="285" requestedWidth="56" smooth="true" url="@/images/note/MIBlanche.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="B_SolBlanche" layoutX="221.0" mnemonicParsing="false" prefHeight="285.0" prefWidth="56.0" style="" text="">
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image preserveRatio="true" requestedHeight="285" requestedWidth="56" smooth="true" url="@/images/note/SolBlanche.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="B_FaBlanche" layoutX="165.0" mnemonicParsing="false" prefHeight="285.0" prefWidth="56.0" style="" text="">
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image preserveRatio="true" requestedHeight="285" requestedWidth="56" smooth="true" url="@/images/note/FABlanche.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="B_LaBlanche" layoutX="277.0" mnemonicParsing="false" prefHeight="285.0" prefWidth="56.0" style="" text="">
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image preserveRatio="true" requestedHeight="285" requestedWidth="56" smooth="true" url="@/images/note/LABlanche.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="B_SiBlanche" layoutX="333.0" mnemonicParsing="false" prefHeight="285.0" prefWidth="56.0" style="" text="">
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image preserveRatio="true" requestedHeight="285" requestedWidth="56" smooth="true" url="@/images/note/SIBlanche.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="B_DoNoir" layoutX="36.0" mnemonicParsing="false" prefHeight="136.0" prefWidth="40.0" style="" text="">
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image preserveRatio="true" requestedHeight="136" requestedWidth="40" smooth="true" url="@/images/note/DoNoir.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="B_ReNoir" layoutX="92.0" mnemonicParsing="false" prefHeight="136.0" prefWidth="40.0" style="" text="">
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image preserveRatio="true" requestedHeight="136" requestedWidth="40" smooth="true" url="@/images/note/ReNoir.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="B_FaNoir" layoutX="201.0" mnemonicParsing="false" prefHeight="136.0" prefWidth="40.0" style="" text="">
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image preserveRatio="true" requestedHeight="136" requestedWidth="40" smooth="true" url="@/images/note/FaNoir.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="B_SolNoir" layoutX="257.0" mnemonicParsing="false" prefHeight="136.0" prefWidth="40.0" style="" text="">
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image preserveRatio="true" requestedHeight="136" requestedWidth="40" smooth="true" url="@/images/note/SolNoir.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="B_LaNoir" layoutX="313.0" mnemonicParsing="false" prefHeight="136.0" prefWidth="40.0" style="" text="">
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image preserveRatio="true" requestedHeight="136" requestedWidth="40" smooth="true" url="@/images/note/LaNoir.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Button fx:id="B_Silence" mnemonicParsing="false" prefHeight="25.0" prefWidth="392.0" text="Chuuuuuuuut" />
+               </children>
+            </VBox>
+            <VBox prefHeight="476.0" prefWidth="100.0" spacing="20.0">
+               <children>
+                  <RadioButton fx:id="R_Aigue" mnemonicParsing="false" text="Aigu">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="RG_Type" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="R_Meduim" mnemonicParsing="false" selected="true" text="Meduim" toggleGroup="$RG_Type" />
+                  <RadioButton fx:id="R_Grave" mnemonicParsing="false" text="Grave" toggleGroup="$RG_Type" />
+                  <RadioButton fx:id="R_Ronde" layoutX="10.0" layoutY="64.0" mnemonicParsing="false">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image preserveRatio="true" requestedHeight="30" requestedWidth="30" smooth="true" url="@/images/ronde.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="RG_Durees" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="R_Blanche" layoutX="10.0" layoutY="91.0" mnemonicParsing="false" toggleGroup="$RG_Durees">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image preserveRatio="true" requestedHeight="30" requestedWidth="30" smooth="true" url="@/images/blanche.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </RadioButton>
+                  <RadioButton fx:id="R_Noire" layoutX="10.0" layoutY="118.0" mnemonicParsing="false" toggleGroup="$RG_Durees">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image preserveRatio="true" requestedHeight="30" requestedWidth="30" smooth="true" url="@/images/noire.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </RadioButton>
+                  <RadioButton fx:id="R_Croche" layoutX="10.0" layoutY="145.0" mnemonicParsing="false" toggleGroup="$RG_Durees">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image preserveRatio="true" requestedHeight="30" requestedWidth="30" smooth="true" url="@/images/croche.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </RadioButton>
+               </children>
+            </VBox>
+            <VBox prefHeight="300.0" prefWidth="500.0">
+               <children>
+                  <Button fx:id="B_PlayBack" mnemonicParsing="false" prefHeight="135.0" prefWidth="168.0" text="">
+                     <VBox.margin>
+                        <Insets left="175.0" top="25.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image preserveRatio="true" requestedHeight="128" requestedWidth="128" smooth="true" url="@/images/play-button.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <HBox prefHeight="50.0" prefWidth="500.0" spacing="50.0">
+                     <children>
+                        <Label text="Volume" />
+                        <Slider fx:id="S_Volume" prefHeight="14.0" prefWidth="307.0" showTickLabels="true" showTickMarks="true" value="100.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="40.0" top="17.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="50.0" prefWidth="500.0" spacing="50.0">
+                     <children>
+                        <Label text="Tempo" />
+                        <Slider fx:id="S_Tempo" max="220.0" prefHeight="14.0" prefWidth="307.0" showTickLabels="true" showTickMarks="true" value="180.0" />
+                     </children>
+                     <padding>
+                        <Insets left="40.0" top="17.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="50.0" prefWidth="500.0" spacing="30.0">
+                     <children>
+                        <Label />
+                        <RadioButton fx:id="R_Piano" mnemonicParsing="false" selected="true" text="Piano">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="RG_Instru" />
+                           </toggleGroup></RadioButton>
+                        <RadioButton fx:id="R_Guitare" layoutX="100.0" layoutY="27.0" mnemonicParsing="false" text="Guitare" toggleGroup="$RG_Instru" />
+                        <RadioButton fx:id="R_Saxo" layoutX="60.0" layoutY="27.0" mnemonicParsing="false" text="Saxophone" toggleGroup="$RG_Instru" />
+                        <RadioButton fx:id="R_Tromp" layoutX="60.0" layoutY="27.0" mnemonicParsing="false" text="Trompette" toggleGroup="$RG_Instru" />
+                     </children>
+                     <padding>
+                        <Insets left="50.0" top="17.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</Pane>
